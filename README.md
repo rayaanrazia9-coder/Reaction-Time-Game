@@ -29,7 +29,7 @@ A fun and interactive browser game that tests your reaction speed. Wait for the 
 
 ## 📸 Screenshot
 
-![Reaction Time Game Screenshot](screenshot.png)
+![Reaction Time Game Screenshot](Screenshot.png)
 
 *Screenshot of the Reaction Time Game.*
 
