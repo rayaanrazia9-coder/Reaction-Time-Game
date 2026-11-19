@@ -27,12 +27,13 @@ A fun and interactive browser game that tests your reaction speed. Wait for the 
 - **CSS3** – Styling and responsive design.
 - **JavaScript** – Game logic, arrays, objects, and conditional statements.
 
-## 📸 Screenshot
+## 📸 Screenshots
 
-![Reaction Time Game Screenshot](Screenshot.png)
+### Game Ready Screen
+![Reaction Time Game - Ready Screen](Screenshot.png)
 
-*Screenshot of the Reaction Time Game.*
-
+### Game Results Screen
+![Reaction Time Game - Results Screen](Screenshot2.png)
 ## 🚀 How to Run
 
 1. Download or clone this repository.
