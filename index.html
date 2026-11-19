@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time Game</title>
+  </head>
+  <body>
+    
+<div class="game-container">
+
+  <h1>⚡ Reaction Time Test</h1>
+
+  <p class="subtitle">
+    Test your reflexes. How fast can you react?
+  </p>
+
+  <div class="game-screen" id="gameScreen">
+    <h2 id="gameMessage">Ready?</h2>
+    <p id="gameInstruction">
+      Click the button below to start.
+    </p>
+  </div>
+
+  <button id="startButton">Start Game</button>
+
+  <div class="results">
+    <div class="result-card">
+      <h3>Last Time</h3>
+      <p id="lastTime">-- ms</p>
+    </div>
+
+    <div class="result-card">
+      <h3>Best Time</h3>
+      <p id="bestTime">-- ms</p>
+    </div>
+
+    <div class="result-card">
+      <h3>Attempts</h3>
+      <p id="attempts">0</p>
+    </div>
+
+    <div class="result-card">
+  <h3>Average Time</h3>
+  <p id="averageTime">-- ms</p>
+</div>
+  </div>
+
+  <div class="history">
+    <h3>Previous Results</h3>
+    <ul id="historyList">
+      <li>No attempts yet</li>
+    </ul>
+  </div>
+
+</div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
