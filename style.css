@@ -1,189 +1,244 @@
 
-/* =================================
-   REACTION RUSH — CYBER PULSE
-   Clean, subtle version
-================================= */
+/* =========================================
+   REACTION RUSH — RETRO ARCADE
+   WEEK 6
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500;600;700;800&display=swap');
 
 /* RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* PAGE */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #11131d;
-  color: #f8fafc;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 35px 18px;
+    font-family: 'Rajdhani', sans-serif;
+    background:
+        linear-gradient(rgba(8, 5, 35, 0.92), rgba(8, 5, 35, 0.96)),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 39px,
+            #25205b 40px
+        ),
+        #080523;
+
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 18px;
 }
 
 /* MAIN CONTAINER */
 .game-container {
-  background: #1b1e2b;
-  width: 100%;
-  max-width: 680px;
-  padding: 42px;
-  border-radius: 24px;
-  text-align: center;
-  border: 1px solid #34384a;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 1000px;
+    padding: 38px;
+    text-align: center;
+
+    background: #100d35;
+    border: 3px solid #a855f7;
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 0 5px #21105a,
+        0 0 25px rgba(168, 85, 247, 0.3);
 }
 
 /* HEADER */
 h1 {
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  color: #00c8df;
-  margin-bottom: 12px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 23px;
+    line-height: 1.7;
+    color: #ffd43b;
+    text-shadow: 3px 3px #e84393;
+    margin-bottom: 18px;
 }
 
 .subtitle {
-  color: #c2c5d0;
-  font-size: 15px;
-  margin-bottom: 32px;
-  line-height: 1.6;
+    color: #c4c5ff;
+    font-size: 18px;
+    margin-bottom: 32px;
 }
 
 /* GAME SCREEN */
 .game-screen {
-  background: #25293a;
-  padding: 80px 20px;
-  border-radius: 18px;
-  margin-bottom: 25px;
-  border: 1px solid #41465d;
-  transition: background 0.3s ease;
-  cursor: pointer;
+    background: #171343;
+    padding: 75px 20px;
+    border: 3px solid #00d9ff;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: background 0.25s ease;
+    cursor: pointer;
 }
 
 .game-screen h2 {
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 12px;
-  color: #ffffff;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 23px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
 .game-screen p {
-  color: #d0d2dc;
-  font-size: 14px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 700;
 }
 
 /* START BUTTON */
 #startButton {
-  background: #00c8df;
-  color: #11131d;
-  border: none;
-  padding: 16px 48px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 800;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+    background: #ffd43b;
+    color: #170c3d;
+    border: 3px solid #ffffff;
+    padding: 17px 40px;
+    border-radius: 8px;
+
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    line-height: 1.8;
+
+    cursor: pointer;
+    box-shadow: 0 5px #b45309;
+    transition: 0.15s ease;
 }
 
 #startButton:hover:not(:disabled) {
-  background: #35d9eb;
-  transform: translateY(-2px);
+    background: #fff176;
+    transform: translateY(-3px);
+    box-shadow: 0 8px #b45309;
 }
 
 #startButton:active:not(:disabled) {
-  transform: scale(0.97);
+    transform: translateY(2px);
+    box-shadow: 0 2px #b45309;
 }
 
 #startButton:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /* STATISTICS */
 .results {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+    margin-top: 35px;
 }
 
 .result-card {
-  background: #25293a;
-  padding: 21px 8px;
-  border-radius: 15px;
-  border: 1px solid #41465d;
-  transition: border-color 0.2s ease;
+    background: #1c174b;
+    padding: 22px 8px;
+    border: 2px solid #a855f7;
+    border-radius: 10px;
+    transition: 0.2s ease;
 }
 
 .result-card:hover {
-  border-color: #00aabd;
+    border-color: #00d9ff;
+    transform: translateY(-3px);
 }
 
 .result-card h3 {
-  font-size: 12px;
-  color: #c5c8d4;
-  margin-bottom: 12px;
-  font-weight: 600;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ffd43b;
+    margin-bottom: 13px;
 }
 
 .result-card p {
-  font-size: 19px;
-  font-weight: 800;
-  color: #ffffff;
-  overflow-wrap: anywhere;
+    font-size: 21px;
+    font-weight: 800;
+    color: #ffffff;
+    overflow-wrap: anywhere;
 }
 
 /* HISTORY */
 .history {
-  margin-top: 35px;
-  text-align: left;
+    margin-top: 35px;
+    text-align: left;
 }
 
 .history h3 {
-  color: #ff6ba9;
-  font-size: 18px;
-  margin-bottom: 15px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #ff65c3;
+    margin-bottom: 18px;
 }
 
 .history ul {
-  list-style: none;
+    list-style: none;
 }
 
 .history li {
-  background: #25293a;
-  padding: 14px 16px;
-  border-radius: 11px;
-  margin-bottom: 9px;
-  color: #e1e3eb;
-  font-size: 14px;
-  border: 1px solid #41465d;
+    background: #1c174b;
+    padding: 14px 16px;
+    border: 2px solid #5140a8;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .history li:hover {
-  border-color: #00aabd;
+    border-color: #00d9ff;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 550px) {
-  .game-container {
-    padding: 25px 18px;
-  }
+/* FOCUS */
+button:focus-visible {
+    outline: 3px solid #00d9ff;
+    outline-offset: 5px;
+}
 
-  h1 {
-    font-size: 28px;
-  }
+/* RESPONSIVE */
+@media (max-width: 650px) {
+    .game-container {
+        padding: 27px 17px;
+    }
 
-  .results {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    h1 {
+        font-size: 17px;
+    }
 
-  .game-screen {
-    padding: 55px 15px;
-  }
+    .game-screen {
+        padding: 55px 12px;
+    }
 
-  .game-screen h2 {
-    font-size: 26px;
-  }
+    .game-screen h2 {
+        font-size: 17px;
+    }
+
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .result-card h3 {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 14px;
+    }
+
+    .game-screen h2 {
+        font-size: 14px;
+    }
+
+    #startButton {
+        width: 100%;
+        font-size: 10px;
+        padding: 15px 10px;
+    }
 }
