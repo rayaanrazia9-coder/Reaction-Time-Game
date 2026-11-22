@@ -2,6 +2,10 @@
 
 A fun and interactive browser game that tests your reaction speed. Wait for the game screen to change, click as quickly as possible, and see how fast your reflexes are!
 
+## 🌐 Live Demo
+
+**[Play Reaction Time Game](https://rayan-reaction-time-game.netlify.app/)**
+
 ## 🎮 How to Play
 
 1. Click the **Start Game** button.
@@ -29,11 +33,18 @@ A fun and interactive browser game that tests your reaction speed. Wait for the 
 
 ## 📸 Screenshots
 
-### Game Ready Screen
+### 1. Game Ready Screen
 ![Reaction Time Game - Ready Screen](Screenshot.png)
 
-### Game Results Screen
-![Reaction Time Game - Results Screen](Screenshot2.png)
+### 2. Waiting Screen
+![Reaction Time Game - Waiting Screen](Screenshot2.png)
+
+### 3. Click Now Screen
+![Reaction Time Game - Click Now Screen](Screenshot3.png)
+
+### 4. Game Results Screen
+![Reaction Time Game - Results Screen](Screenshot4.png)
+
 ## 🚀 How to Run
 
 1. Download or clone this repository.
@@ -43,6 +54,8 @@ A fun and interactive browser game that tests your reaction speed. Wait for the 
 
 ## 👩‍💻 Author
 
-Created as part of the **Gabi School Week 5 AI Assignment**.
+Created as part of the **Gabi School AI Assignment**.
+
+**Live Website:** [Reaction Time Game](https://rayan-reaction-time-game.netlify.app/)
 
 **GitHub Repository:** [Reaction-Time-Game](https://github.com/rayaanrazia9-coder/Reaction-Time-Game)
